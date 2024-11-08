@@ -61,3 +61,4 @@ PrintMatrix(arrayd2);
 Console.WriteLine();
 ElemEvenIndexesTpoSquare(arrayd2);
 PrintMatrix(arrayd2);
+
