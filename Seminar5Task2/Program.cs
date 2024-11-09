@@ -23,7 +23,7 @@ void PrintMatrix(int[,] matrix)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            Console.Write($"{matrix[i, j],5}");   // 4 - длина строки
+            Console.Write($"{matrix[i, j],5}");   // 5 - длина строки
         }
         Console.WriteLine();
     }
