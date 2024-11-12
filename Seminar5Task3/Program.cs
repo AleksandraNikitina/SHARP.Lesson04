@@ -37,3 +37,36 @@ void PrintMatrix(int[,] matrix)
         Console.WriteLine();
     }
 }
+
+double[] GetAverageRowsToArray(int[,] matrix)
+{
+    double[] avarageRowsElem = new double[matrix.GetLength(0)];
+    for (int i = 0; i < matrix.GetLength(0); i++)
+    {
+        int sumElemInRow = 0;
+        for (int j = 0; j < matrix.GetLength(1); j++)
+        {
+            sumElemInRow = sumElemInRow + matrix[i, j];
+        }
+        avarageRowsElem[i] = (double)sumElemInRow / matrix.GetLength(1);
+    }
+    return avarageRowsElem;
+}
+
+void PrintArray(double[] array)
+{
+    Console.Write("[");
+    for (int i = 0; i < array.Length - 1; i++)
+    {
+        Console.Write($"{array[i]:F2} ");    // :F2 - округление до указанного количества знаков после запятой 
+    }
+    Console.WriteLine($"{array[array.Length - 1]:F2}]");
+
+}
+
+int[,] arrayd2 = CreateMatrixRndInt(4, 3, 1, 10);
+PrintMatrix(arrayd2);
+Console.WriteLine();
+
+double[] resultArray = GetAverageRowsToArray(arrayd2);
+PrintArray(resultArray);
