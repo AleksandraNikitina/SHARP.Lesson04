@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Sem6 HomeTask2/1.0.0": {
+        "runtime": {
+          "Sem6 HomeTask2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Sem6 HomeTask2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
